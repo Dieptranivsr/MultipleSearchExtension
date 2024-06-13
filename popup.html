@@ -1,0 +1,39 @@
+<!-- This is the HTML for the popup window that appears when the extension icon is clicked. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Search Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+        #search-container {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #search-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        #search-button {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Search Wikipedia</h2>
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Enter search query">
+        <button id="search-button">Search</button>
+    </div>
+    <div id="results"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
